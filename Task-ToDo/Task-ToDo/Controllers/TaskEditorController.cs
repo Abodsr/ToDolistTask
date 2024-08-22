@@ -37,7 +37,7 @@ namespace Task_ToDo.Controllers
 
         // POST api/<TaskEditorController>
         [HttpPost("create")]
-        public async Task<IActionResult> Create(int userid,string name, string description)
+        public async Task<IActionResult> Create(int userid,string title, string description)
         {
             
             if (userid == null)
@@ -47,7 +47,7 @@ namespace Task_ToDo.Controllers
 
             var task = new ToDoTask
             {
-                Name = name,
+                Name = title,
                 Description = description,
                 IsCompleted = false,
                 UserId = userid
