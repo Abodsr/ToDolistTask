@@ -1,1 +1,1 @@
-open project with VIS
+open project.sin with VIS
